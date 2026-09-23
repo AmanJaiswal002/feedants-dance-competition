@@ -15,6 +15,15 @@ app.use(express.json());
 
 app.use('/api', apiRoutes);
 
+app.get('/', (req, res) => {
+  res.json({
+    status: 'OK',
+    message: 'Welcome to Feedants Classical Dance Competition Backend API!',
+    health: '/health',
+    api: '/api/competitions/feedants-classical-dance'
+  });
+});
+
 app.get('/health', (req, res) => {
   res.json({ status: 'OK', message: 'Feedants Competition Backend API is running smoothly' });
 });
