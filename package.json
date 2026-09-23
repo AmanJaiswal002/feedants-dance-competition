@@ -1,0 +1,22 @@
+{
+  "name": "feedants-fullstack-assignment",
+  "version": "1.0.0",
+  "description": "Feedants Full Stack Development Internship Assignment",
+  "private": true,
+  "scripts": {
+    "start:backend": "cd backend && node server.js",
+    "start:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [
+    "feedants",
+    "fullstack",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC"
+}
